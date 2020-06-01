@@ -1,7 +1,7 @@
 import Todo from "./Todo";
 import axios from 'axios';
 
-const base_url = 'http://im-bad-at-titles.herokuapp.com/api/todos';
+const base_url = 'https://im-bad-at-titles.herokuapp.com/api/todos';
 
 export const getTodos = async () => {
     try {
