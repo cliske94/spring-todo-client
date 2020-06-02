@@ -64,7 +64,7 @@ export default class TodoItem extends Component<TodoProp, TodoState> {
                 <Card title={this.props.todo.title} className={styles.todoCard}>
                     <p>Description</p>
                     <p>{this.props.todo.description}</p>
-                    <p>Complete: <Checkbox defaultChecked={this.props.todo.complete} disabled /></p>
+                    <p>Complete: <Checkbox checked={this.props.todo.complete} disabled/></p>
                     <Button type="primary" onClick={this.handleUpdate}>
                         Update
                     </Button>
