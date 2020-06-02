@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Todo from "../services/Todo";
 import {Button, Form, Input, Modal, Switch} from "antd";
-import styles from "./styles.module.css";
 import {updateTodoById} from "../services/todoService";
 
 const layout = {
