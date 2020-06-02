@@ -76,7 +76,7 @@ export default class TodoItem extends Component<TodoProp, TodoState> {
                         visible={this.state.modalVisible}
                         onOk={this.handleOk}
                         onCancel={this.handleCancel}
-                        >
+                    >
                         <p className={styles.dangerDeleteTodo}>In order to delete a todo, it MUST be completed!</p>
                     </Modal>
                     <TodoUpdateModal visible={this.state.updateModalVisible}
