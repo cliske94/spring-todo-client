@@ -26,7 +26,7 @@ const TodoUpdateModal: React.FC<TodoUpdateModalProps> = ({visible, todo, onCance
    const onUpdate = (values: any) => {
        values.id = todo.id;
        console.log(values);
-       updateTodoById(values).then(reload);
+       updateTodoById(values).then(() => reload()).then(() => onCancel());
     }
 
     return (
